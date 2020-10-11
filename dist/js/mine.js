@@ -17,10 +17,11 @@ document.documentElement.style.setProperty('--main-color', mainColors)
 
 }
 // setting-box
-let gear = document.querySelector(" .toggle-setting .fa-gear");
+// change fa-gear to span untel we gt conection 
+let gear = document.querySelector(" .toggle-setting span");
     gear.onclick = function (){
 
-    this.classList.toggle('fa-spin');
+    // this.classList.toggle('fa-spin');
 
     document.querySelector(".setting-box").classList.toggle('open');
 }
@@ -43,50 +44,50 @@ colorsList.forEach(li => {
 })
 
 
-// select the main page
-let page =document.querySelector(".main");
+// // select the main page
+// let page =document.querySelector(".mainxxx");
 
-// images arry
-let imageArray = ["01.jpg","02.jpg","03.jpg"];
+// // images arry
+// let imageArray = ["01.jpg","02.jpg","03.jpg"];
 
-// set the time 
-setInterval(() => {
-    // genirate the number 
-    let randomN = Math.floor(Math.random() * imageArray.length);
+// // set the time 
+// setInterval(() => {
+//     // genirate the number 
+//     let randomN = Math.floor(Math.random() * imageArray.length);
     
-    page.style.backgroundImage = 'url("imgs/'+imageArray[randomN]+'")';
+//     page.style.backgroundImage = 'url("imgs/'+imageArray[randomN]+'")';
     
-}, 100000)
-// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// }, 100000)
+// // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-let myImg =  ['01.jpg', '02.jpg']
+// let myImg =  ['01.jpg', '02.jpg']
 
-let bgOPtion = true
-function randomImg(){
-    if (bgOPtion = true) {
+// let bgOPtion = true
+// function randomImg(){
+//     if (bgOPtion = true) {
         
-        setInterval(() => {
-            const bgRandom = document.querySelectorAll(".randowm-bg span");
+//         setInterval(() => {
+//             const bgRandom = document.querySelectorAll(".randowm-bg span");
 
-bgRandom.forEach(span => {
-    span.addEventListener("click", (e) =>{
+// bgRandom.forEach(span => {
+//     span.addEventListener("click", (e) =>{
 
 
 
-        e.target.parentElement.querySelectorAll(".active").forEach(element => {
-            element.classList.remove("active")
-        })
+//         e.target.parentElement.querySelectorAll(".active").forEach(element => {
+//             element.classList.remove("active")
+//         })
 
-            e.target.classList.add("active")
-    })
-})
+//             e.target.classList.add("active")
+//     })
+// })
 
-        }, 100);
-    }
-}
+//         }, 100);
+//     }
+// }
 
-// switch bg 
-randomImg()
+// // switch bg 
+// randomImg()
 // 00000000000000000000000000000
 
 // gallery 

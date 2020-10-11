@@ -1,7 +1,11 @@
 
-// :root{
-//     --main-color :#ff9800
-// }
+// ginral set
+
+// //////////////
+
+:root{
+    --main-color :#ff9800
+}
 body{
     background-color: #eee;
     color: #000000;
@@ -79,6 +83,26 @@ $border-dark: rgba($base-color, 0.88);
     &.open{
         left: 0;
     }
+    .main-link {
+        list-style: none;
+        line-height:1.5 ;
+        // margin:5px;
+        // border: 1px solid transparent;
+        margin-top: 50px;
+        
+        li:hover{
+            transition: ease-in-out .3s;
+            background-color: #777;
+            border-radius:3px;
+
+            
+            a:hover{
+                text-decoration: none;
+                color: #000;
+                display: inline-block
+                }
+        }
+    }
     .toggle-setting{
         position: absolute;
         right: -30px;
@@ -88,6 +112,7 @@ $border-dark: rgba($base-color, 0.88);
         width: 30px;
         text-align: center;
         cursor: pointer;
+        border-radius: 4px;
         .fa-gear{
             padding: 8px 0;
             width: 30px;
@@ -148,8 +173,10 @@ $border-dark: rgba($base-color, 0.88);
 
 .main{
  min-height: 100vh;
- background-image: url('../imgs/01.jpg');
- background-size: cover;
+//  background-image: url('../imgs/01.jpg');
+//  background-size: cover;
+// background-color: #252a34;
+background-image: linear-gradient(to right top, #252a34, #273752, #274472, #265193, #255eb5, #476cc5, #617bd6, #7a8ae6, #9da1e8, #bbbaea, #d6d3ec, #eeeeee);
  position: relative;
  .over-l{
     background-color: rgba(0, 0, 0, .5);
@@ -211,10 +238,6 @@ header{
     }
 }
 
-.test{
-    color: #000;
-}
-
 // about 
 
 // skills
@@ -234,7 +257,27 @@ font: 1em sans-serif;
     padding: 3px;
     background-color: #f6f6f6;
     border: 1px solid #ccc;
-    margin: 5px;
-    cursor: pointer;
     cursor: pointer;
 }
+    #Contact{
+         background-color: #fff;
+         .form-control{
+            height: 47px;
+            background-color: #b3d7ff;
+            border: 1px solid #286090;
+            border-radius: 5px;
+            margin-bottom:15px;
+            color:#000;
+            font-size: 20px;
+            }
+        button{
+            margin: 25px 45%;
+            width: 120px;
+            // font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            }
+		}
+
+
+
