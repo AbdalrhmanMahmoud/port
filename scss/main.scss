@@ -1,8 +1,3 @@
-
-// ginral set
-
-// //////////////
-
 :root{
     --main-color :#ff9800
 }
@@ -18,11 +13,9 @@ $base-color: #8c19ce;
 $n2-color:#f00;
 $n3-color:#0800;
 $border-dark: rgba($base-color, 0.88);
-
 .alert {
   border: 2px solid $border-dark;
 }
-
 // genlar itmes
 .overlay-class{
     position: fixed;
@@ -237,9 +230,29 @@ header{
         background-color: var(--main-color);
     }
 }
+// //////////////////////////
 
-// about 
 
+#service{
+
+    .item{
+        p:last-of-type{
+            margin-bottom: 50px;
+        }
+        i{
+            font-size: 5em;
+        }
+        .fa-html5:before{
+            color: #f00;
+        }
+        .fa-wordpress:before {
+            color: #007bff;
+        }
+        .fa-paint-brush:before {
+            color: #17a2b8;
+        }
+    }
+}
 // skills
 #skills{
     .skills-box{
@@ -249,6 +262,38 @@ header{
         h5{
 font: 1em sans-serif;
         }
+    }
+}
+#testimonial{
+    background-color: #617bd6;
+    height: 200px;
+    .year{
+        position: relative;
+        overflow: hidden;
+        &:before{
+            content: "";
+            width: 5px;
+            height: 100%;
+            background-color: #f00;
+            position: absolute;
+            left: 50%;
+            margin-left: -1px;
+            top:0
+        }
+        .left,
+        .right{
+            width: calc(50% -30px);
+            margin-bottom: 40px;
+            position: relative;
+            background-color: #fff;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+
     }
 }
 // galry 
@@ -277,6 +322,29 @@ font: 1em sans-serif;
             font-size: 1.3em;
             margin-bottom: 30px;
             }
+
+        .media{
+            margin: auto 40%;
+            span{
+                font-size: 2em;
+                 margin: 10px;
+                 .fa-envelope:before {
+              
+                    color: darkgrey;
+                }
+                .fa-github:before {
+                    color: #000;
+                }
+                .fa-stack-overflow:before {
+                    color: #f48024;
+                }
+                .fa-linkedin:before{
+                    color: #0a66c2;
+                }
+
+            }
+
+        }
 		}
 
 
