@@ -10,7 +10,6 @@ body{
 }
 a:hover{
     text-decoration: none;
-    color: #fff;
 }
 // main setting 
 $base-color: #8c19ce;
@@ -266,6 +265,25 @@ header{
         }
     }
 }
+// portfolio ###########
+#port{
+    .item{
+        opacity:.7;
+        // }
+        &:hover{
+         opacity: 1;
+         transition:.5s ease;        
+        }
+         img{
+             border: 5px solid #fff;
+             width: 200px;
+             height: 200px;
+         }
+
+    }
+    }
+
+// ##################################
 // skills
 #skills{
     .skills-box{
@@ -277,6 +295,7 @@ font: 1em sans-serif;
         }
     }
 }
+
 #testimonial{
     background-color: #617bd6;
     // height: 100%;
