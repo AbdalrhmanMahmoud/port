@@ -18,7 +18,8 @@ document.documentElement.style.setProperty('--main-color', mainColors)
 }
 // setting-box
 // change fa-gear to span untel we gt conection 
-let gear = document.querySelector(" .toggle-setting span");
+
+let gear = document.querySelector(" .toggle-setting .fa-gear");
     gear.onclick = function (){
 
     // this.classList.toggle('fa-spin');
@@ -27,6 +28,7 @@ let gear = document.querySelector(" .toggle-setting span");
 }
 // switch color 
 const colorsList = document.querySelectorAll(".color-o li");
+console.log(colorsList)
 
 colorsList.forEach(li => {
     li.addEventListener("click", (e) =>{
