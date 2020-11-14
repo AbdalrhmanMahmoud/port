@@ -91,7 +91,6 @@ colorsList.forEach(li => {
 // 00000000000000000000000000000
 
 // gallery 
-
 let gallery = document.querySelectorAll(".gallery img")
     gallery.forEach(img => {
     img.addEventListener('click', (e) => {

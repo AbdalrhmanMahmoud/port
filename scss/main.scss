@@ -82,16 +82,12 @@ $border-dark: rgba($base-color, 0.88);
     .main-link {
         list-style: none;
         line-height:1.5 ;
-        // margin:5px;
-        // border: 1px solid transparent;
         margin-top: 50px;
         
         li:hover{
             transition: ease-in-out .3s;
             background-color: #777;
             border-radius:3px;
-
-            
             a:hover{
                 text-decoration: none;
                 color: #000;
@@ -133,7 +129,6 @@ $border-dark: rgba($base-color, 0.88);
             }
             li:first-of-type{
                 background-color: $base-color;
-                // background-color: #8319c8;
             }
             li:nth-of-type(2){
                 background-color: $n2-color;
@@ -144,36 +139,18 @@ $border-dark: rgba($base-color, 0.88);
 
             }
         }
-        .randowm-bg{
-            .Status{
-                span{
-                    display: inline-block;
-                    font-size: 1.1em;
-                    background-color: #009688;
-                    border: 5px solid #fff;
-                    border-radius: 5px;
-                    padding: 5px 10px;
-                    margin: 1px 5px;
-                    opacity: .5;
-                    cursor: pointer;
-                    &.active,
-                    &:hover{
-                        opacity: 1;
-                    }
-                }
-            }
-        }
     }
 }
 
 
 .main{
- min-height: 100vh;
-//  background-image: url('../imgs/01.jpg');
-//  background-size: cover;
-// background-color: #252a34;
+ min-height:500px;
+height: auto;
+margin-bottom: 20px;
 background-image: linear-gradient(to right top, #252a34, #273752, #274472, #265193, #255eb5, #476cc5, #617bd6, #7a8ae6, #9da1e8, #bbbaea, #d6d3ec, #eeeeee);
  position: relative;
+ clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 87%, 50% 100%, 50% 100%, 50% 100%, 0 87%, 0% 35%, 0 0);
+
  .over-l{
     background-color: rgba(0, 0, 0, .5);
     position: absolute;
@@ -190,10 +167,7 @@ header{
     color: #fff;
     display: flex;
     padding: 10px;
-    .logo{
-        width: 300px;
-        padding: 20px;
-    }
+
     ul {
         list-style: none;
         width: 100%;
@@ -242,11 +216,8 @@ header{
 
     }
 }
-// //////////////////////////
-
 
 #service{
-
     .item{
         p:last-of-type{
             margin-bottom: 50px;
@@ -266,39 +237,39 @@ header{
     }
 }
 // portfolio ###########
-#port{
+#portfolio{
+    background: url(/dist/imgs/contact-us.jpg) fixed no-repeat;
     .item{
-        opacity:.7;
-        // }
+        opacity:.5;
         &:hover{
-         opacity: 1;
-         transition:.5s ease;        
+            opacity: 1;
+            transition:.5s ease;  
         }
-         img{
-             border: 5px solid #fff;
-             width: 200px;
-             height: 200px;
-         }
-
+        img{
+            border: 5px solid #fff;
+            width: 200px;
+            height: 200px;
+        }
+        h2 a{
+            color: #fff;
+        }
     }
     }
-
 // ##################################
 // skills
 #skills{
     .skills-box{
         h3{
-            text-decoration-style: none;
+           text-decoration-style: none;
         }
         h5{
-font: 1em sans-serif;
+        font: 1em sans-serif;
         }
     }
 }
 
 #testimonial{
-    background-color: #617bd6;
-    // height: 100%;
+    background-color: #5c7084;
     .content{
         position: relative;
         overflow: hidden;
@@ -327,7 +298,6 @@ font: 1em sans-serif;
             border-radius: 50%;
             top: 20px;
         }
-
         .left{
             float: left;
             &:before{
@@ -371,18 +341,60 @@ font: 1em sans-serif;
 
 }
 }
-// galry 
-.galary .img-boc{
+// test when mobli 
+.card .carousel-item {
+    height: 300px;
+    .carousel-caption {
+        padding: 0;
+        right: 0;
+        left: 0;
+        color: #3d3d3d;
+        .rate i{
+            color:#ffc107
+        }
+
+}
+}
+.navi a {
+    text-decoration:none;
+    .ico {
+     background-color: grey;
+     padding: 10px;
+     }
+     a:hover > .ico {
+    background-color: #666;
+    }
+    }
+
+// gallery 
+.gallery{
+    background-color: #fff;
+ .img-box{
+          text-align: center;
+
+        img{
    
-    width: 200px;
-    padding: 3px;
-    background-color: #f6f6f6;
-    border: 1px solid #ccc;
-    cursor: pointer;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 20px;
+
+            &:hover{
+                border: 5px dashed #dd000d;
+            }
+        }
+    }
+
 }
 
+
 #tools{
-    height: 100%;
+    background-image: url(/dist/imgs/service-bg.jpg);
+    background-size: cover;
+    h2{
+        color: #fff;
+    }
     .type{
 
         ul{
@@ -397,25 +409,24 @@ font: 1em sans-serif;
 
             }
             h3{
-                // padding: 20px;
                 padding: 10px;
                 margin: -10px;
                 height: 65px;
                 background-color: aqua;
-
-
                 clip-path: polygon(100% 0, 100% 59%, 0 100%, 0 0);
-
             }
             li:first-of-type{
                 margin-top: 30px;
             }
-
-        // }
     }
 }
     #Contact{
-         background-color: #fff;
+        background-image: url(/dist/imgs/contact-us.jpg);
+        background-size: cover;
+        h2{
+            color: #fff;
+            margin: 30px;
+        }
          .form-control{
             height: 47px;
             background-color: #b3d7ff;
@@ -428,7 +439,6 @@ font: 1em sans-serif;
         button{
             margin: 25px 45%;
             width: 120px;
-            // font-weight: bold;
             font-size: 1.3em;
             margin-bottom: 30px;
             }
@@ -440,7 +450,7 @@ font: 1em sans-serif;
                  margin: 10px;
                  .fa-envelope:before {
               
-                    color: darkgrey;
+                    color: #000;
                 }
                 .fa-github:before {
                     color: #000;
@@ -453,28 +463,15 @@ font: 1em sans-serif;
                 }
 
             }
-
         }
 		}
+    footer{
+        height: 20px;
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
 
+        // @media (max-width: 400px) {
 
-
-        @media (max-width: 400px) {
-            // .container{
-            //     padding: 1px !important;
-            //     margin: 1px !important;
-            //     text-align: left;
-                
-            // } 
-        }
-            // .lead{
-            //     font-weight: normal;
-            //     font-size:1em;
-            //     text-align:left ;
-            //     margin: 1px;
-            //     padding: 1px;
-            // }
-        
-        
-        
         // }
+
