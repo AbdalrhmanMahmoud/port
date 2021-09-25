@@ -4,7 +4,7 @@ var server = new StaticServer({
   rootPath:"./dist/",
   // hostname: "127.0.0.1",
 
-  port:8000
+  port:8080
 
 });
 

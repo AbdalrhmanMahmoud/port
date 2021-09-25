@@ -272,6 +272,7 @@ header{
         &:hover{
             opacity: 1;
             transition:.5s ease;  
+            color:var(--main-color);
         }
         img{
             border: 5px solid #fff;

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400&display=swap');
+//color list
+$white:#fff;
+$mainColor:#101d2c;
+$lightGoldColor:rgba(198, 153, 99, .7);
+$mainFont:"Niconne",
+cursive;
+$GoldColor:#ffaf4ee3;
+$small:576px;
+$medium:768px;
+$larg:992px;
+$lightwhite:rgba(255, 255, 255, .5);
+$tekoFont:'Teko',
+sans-serif;
+
+a {
+    color: #fff !important;
+}
+
+p {
+    margin: 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.btn {
+    width: 100px;
+    padding: 5px 0 !important;
+    border: 1px solid $lightGoldColor;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .3), transparent);
+        transition: all 700ms;
+
+    }
+
+    &:hover::before {
+        left: 100%;
+    }
+
+    @media (min-width: $medium) {
+        width: 150px;
+    }
+}
+
+// 
+.sec-heading {
+    h4 {
+        text-transform: uppercase;
+        color: $mainColor;
+        line-height: 0;
+        font-family: $tekoFont;
+        font-weight: 300px;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-family: $mainFont;
+        color: $GoldColor;
+    }
+}
