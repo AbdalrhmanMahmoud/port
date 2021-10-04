@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$mainF:'Source Sans Pro', sans-serif;
+$secaryF:Herr 'Von Muellerhoff', cursive;
+$bodyF:'Ephesis', cursive;
+// 'Cabin', sans-serif;
+$mainColor:#252525;
+$secColor:#c59d5f;
+$bodyColor:#515151;
+$small:576px;
+$medium:768px;
+$larg:900px;
+
+html{
+    font-size: 10px;
+    font-family: $bodyF;
+    color: $bodyColor;
+    scroll-behavior: smooth;
+
+section{
+    padding: 4rem 0;
+    text-align: center;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+}
+body{
+    overflow-x: hidden;
+
+}
+.btn{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+
+.g-head{
+    text-align: center;
+    margin-top: 4rem;
+}
+.img-g{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
